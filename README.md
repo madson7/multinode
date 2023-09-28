@@ -5,7 +5,7 @@ Uso de multinode como submodule
 ```bash
 git submodule add https://github.com/madson7/multinode.git
 cd multinode
-git checkout 0.0.1
+git checkout 0.0.2
 cp generate_inventory_example.sh ../generate_inventory.sh
 cd ..
 chmod +x generate_inventory.sh
