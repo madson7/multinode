@@ -6,8 +6,8 @@
 IMAGE_BOX = "generic/ubuntu2004" # Ubuntu or debian
 NODE_CPUS = 4  # vCPUs per Cloud Node
 NODE_MEMORY = 6144  # RAM per Cloud Node
-MASTER_NODES_COUNT = 1
-CLIENT_NODES_COUNT = 1
+MASTER_NODES_COUNT = 0
+CLIENT_NODES_COUNT = 0
 
 def packages_debianoid(user)
   return <<-EOF
