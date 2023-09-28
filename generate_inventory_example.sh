@@ -24,8 +24,8 @@ if ! expr "$CLIENT_NODES_COUNT" : '^[0-9]\+$' >/dev/null; then
     exit 1
 fi
 
-sed -i "s/MASTER_NODES_COUNT = 1/MASTER_NODES_COUNT = ${MASTER_NODES_COUNT}/g" Vagrantfile
-sed -i "s/CLIENT_NODES_COUNT = 1/CLIENT_NODES_COUNT = ${CLIENT_NODES_COUNT}/g" Vagrantfile
+sed -i "s/MASTER_NODES_COUNT = 0/MASTER_NODES_COUNT = ${MASTER_NODES_COUNT}/g" Vagrantfile
+sed -i "s/CLIENT_NODES_COUNT = 0/CLIENT_NODES_COUNT = ${CLIENT_NODES_COUNT}/g" Vagrantfile
 
 vagrant up
 
